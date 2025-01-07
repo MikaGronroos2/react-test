@@ -1,23 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./Components/Header.js";
+import IntroductionPanel from "./Components/IntroductionPanel.js";
+import ProjectsPanel from "./Components/ProjectsPanel.js";
+import Skills from "./Components/Skills.js";
+import RandomComponent from "./Components/RandomComponent";
+import RandomStatementComponent from "./Components/RandomStatementComponent";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>asldjalksdjalskjdlkkj</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header />
+        <IntroductionPanel />
+        <Skills />
+        <ProjectsPanel />
+        <RandomComponent />
+        <RandomStatementComponent />
       </header>
     </div>
   );
